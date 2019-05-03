@@ -1,5 +1,11 @@
 # Salary distribute
 
+## Most important 
+* rent(water&electricity),3000
+* eating&traffic,2000
+* clothes&shoes&others,1000
+
+
 ## cards
 
 ### ABC
@@ -25,15 +31,13 @@ life
 
 #### items 2
 
-* Interest&learning&Clothing&Shoes 1000
+* Interest&Books&learning&Clothing&Shoes 1000
 
 ### BOC [4500]
 
 #### items 3
 
-* Rent 2000
 * Electricity/wate/gas 500
-* loan 2000
 
 ### CCB [2500]
 
