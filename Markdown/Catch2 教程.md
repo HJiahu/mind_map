@@ -2,16 +2,7 @@
 
 `译者注：当前文档并不是官方文档的直译。在翻译的过程中我删除部分原文中的内容并添加了一些自己的理解，可能有偏差，请见谅`
 
-
-
-1. 获得 Catch
-2. 如何使用？
-3. 编写测试用例 
-4. 测试用例和测试区段
-5. BDD-Style
-6. 小结
-7. 参数类型化测试
-8. 后续学习与使用
+[TOC]
 
 ## 获得 Catch
 
@@ -109,7 +100,7 @@ unsigned int Factorial( unsigned int number ) {
 
 3. 测试名和标签都是字符串。
 
-4. 我们仅使用宏`REQUIRE`来编写测试断言。Catch没有使用分立的测试函数表示不同的断言（例如REQUIRE_TRUE、REQUIRE_FALSE、REQUIRE_EQUAL、REQUIRE_LESS等），而是直接使用C++表达式的真值结果。此外Catch使用模板表达式捕获测试表达式的左侧和右侧（例如 `exp_a == exp_b`，Catch将捕获exp_a和exp_b的计算结果），从而在测试报告中显示两侧的计算结果。
+4. 我们仅使用宏`REQUIRE`来编写测试断言。Catch没有使用分立的测试函数表示不同的断言（例如REQUIRE_TRUE、REQUIRE_FALSE、REQUIRE_EQUAL、REQUIRE_LESS等），而是直接使用C++表达式的真值结果（其他可用宏可参考[这里][0]）。此外Catch使用模板表达式捕获测试表达式的左侧和右侧（例如 `exp_a == exp_b`，Catch将捕获exp_a和exp_b的计算结果），从而在测试报告中显示两侧的计算结果。
 
 ## 测试用例和测试区段（Test case and section）
 
@@ -268,3 +259,5 @@ TEMPLATE_TEST_CASE("Templated test","",int,float, std::string, Bar)
 当前文档简要介绍了Catch，也指出了Catch和其他测试框架的一些区别。了解这些知识后你已经可以编写一些实际的测试用例了。
 
 当然还有很多东西需要学习，但你只需要在用到那些新特性的时候再学。你可以在 Readme.md 中找到Catch的所有特性。
+
+[0]:https://github.com/catchorg/Catch2/blob/master/docs/assertions.md#top
